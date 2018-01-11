@@ -14,4 +14,9 @@ $(document).ready(function(){
     }
   };
   checkAge();
+  $('#formOne').submit(function(event) {
+    $('#form').hide();
+    alert("The police are on their way. Stay where you are.");
+  event.preventDefault();
+  });
 });
