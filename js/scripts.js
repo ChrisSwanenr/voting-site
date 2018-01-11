@@ -1,17 +1,21 @@
 $(document).ready(function(){
 
+  var add = function(q1Input, q2Input, q3Input) {
+    return q1Input + q2Input + q3Input;
+  }
+
   function checkAge() {
     var age = parseInt(prompt("How old are you?"));
 
-    if (age < 18) {
-      $('#minors').show();
+    if (age > 18) {
+      $('#adults').show();
     } else if(isNaN(age)){
        if (confirm("Please enter in a number")) checkAge();
     } else if (age === 18) {
+      $('#adults').show();
       alert("Congratulations!");
-      $('#adults').show();
     } else {
-      $('#adults').show();
+      $('#minors').show();
     }
   };
   checkAge();
@@ -21,10 +25,6 @@ $(document).ready(function(){
 
   event.preventDefault();
   });
-
-  var add = function(q1Input, q2Input, q3Input) {
-    return q1Input + q2Input + q3Input;
-  }
 
   $('#test').submit(function(event) {
     var q1Input = parseInt($("#q1").val());
