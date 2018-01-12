@@ -1,9 +1,31 @@
 
 #rhino, #death, #canada, #police {
   display: none;
+  text-align: center;
 }
 
 
 #minors, #adults {
+  display: none;
+}
+#minorbtn {
+  margin-top: 10px;
+}
+
+.jumbotron{
+  background-color: lightblue;
+  text-align: center;
+}
+#rhino img {
+  display: block;
+  max-height: 200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.merica {
+  background-image: url(http://bestanimations.com/Flags/USA/usa-american-flag-waving-in-wind-real-close-up-animated-gif.gif);
+}
+#adults img {
   display: none;
 }

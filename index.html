@@ -6,6 +6,7 @@
     <link href="css/bootstrap.css" type="text/css" rel="stylesheet">
     <link href="css/styles.css" type="text/css" rel="stylesheet">
     <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/bootstrap.js"></script>
     <script src="js/scripts.js"></script>
   </head>
   <body>
@@ -13,43 +14,57 @@
       <div class="jumbotron">
         <h1>All About Voting</h1>
       </div>
-      <div class="well" id="minors">
-        <p>HERES INFO FOR MINORS</p>
-        <p>You can only vote when you are an adult, silly child.</p>
-        <div class="future">
-          <h1 id="rhino">You belong in The Rhinoceros Party</h1>
-          <h1 id="death">You belong in The Dungeons, Death and Taxes Party</h1>
-          <h1 id="canada">You belong in Canadian Extreme Wrestling Party</h1>
-          <h1 id="police">What is wrong with you!?!?!</h1>
-        <div id="party">
-          <h2>Here is a test to determine which party you would likely vote for.</h2>
-          <form id="test">
-            <div class="form-row">
-              <label for="Question 1">What would you do if a bus of puppies was going towards a cliff?</label>
-              <select class="form-control" id="q1">
-                <option value="1">I would jump in front of it to stop it with my body!</option>
-                <option value="2">I would yell out for help but not actually doing anything.</option>
-                <option value="3">I would jump down and bathe in the blood.</option>
-                <option value="4">Who gives a shit?</option>
-              </select>
-            </div>
-            <div class="form-row">
-              <label for="Question 2">If you saw someone bathing in the blood of puppies, what would you do?</label>
-              <select class="form-control" id="q2">
-                <option value="1">I would stop them immediately! Disgusting!</option>
-                <option value="2">I would stand in shock, not moving an inch to help those poor puppies.</option>
-                <option value="3">I would jump down and bathe in the blood.</option>
-              </select>
-            </div>
-            <div class="form-row">
-              <label for="Question 3">Do you like taxes?</label>
-              <select class="form-control" id="q3">
-                <option value="1">Yes! Death to money!</option>
-                <option value="2">No</option>
-              </select>
-              <button type="submit" class="btn">Submit</button>
-            </div>
-          </form>
+      <div class="panel panel-info" id="minors">
+        <div class="panel-heading">
+          <h2>You can only vote when you are an adult, silly child.</h2>
+        </div>
+        <div class="panel-body">
+          <div id="rhino">
+          <h1>You belong in The Rhinoceros Party</h1>
+          <img src="img/RhinoHeader.jpg" alt="A nice rhino">
+        </div>
+          <div id="death">
+          <h1>You belong in The Dungeons, Death and Taxes Party</h1>
+          <img src="img/ddt.png" alt="">
+        </div>
+          <div id="canada">
+          <h1>You belong in Canadian Extreme Wrestling Party</h1>
+          <img src="img/quentin.jpg" alt="">
+        </div>
+          <div id="police">
+          <h1>What is wrong with you!?!?!</h1>
+          <img src="img/cop.jpg" alt="">
+        </div>
+          <div id="party">
+            <h3>Here is a test to determine which party you would likely vote for.</h3>
+            <form id="test">
+              <div class="form-row">
+                <label for="Question 1">What would you do if a bus of puppies was going towards a cliff?</label>
+                <select class="form-control" id="q1">
+                  <option value="1">I would jump in front of it to stop it with my body!</option>
+                  <option value="2">I would yell out for help but not actually doing anything.</option>
+                  <option value="3">I would jump down and bathe in the blood.</option>
+                  <option value="4">Who gives a shit?</option>
+                </select>
+              </div>
+              <div class="form-row">
+                <label for="Question 2">If you saw someone bathing in the blood of puppies, what would you do?</label>
+                <select class="form-control" id="q2">
+                  <option value="1">I would stop them immediately! Disgusting!</option>
+                  <option value="2">I would stand in shock, not moving an inch to help those poor puppies.</option>
+                  <option value="3">I would jump down and bathe in the blood.</option>
+                </select>
+              </div>
+              <div class="form-row">
+                <label for="Question 3">Do you like taxes?</label>
+                <select class="form-control" id="q3">
+                  <option value="1">Yes! Death to money!</option>
+                  <option value="2">No</option>
+                </select>
+                <button id="minorbtn" type="submit" class="btn btn-info">Submit</button>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
     </div>
@@ -108,6 +123,7 @@
             <button type="submit" class="btn">Submit</button>
           </form>
         </div>
+        <img src="img/cop.jpg" alt="">
         </div>
       </div>
     </div>

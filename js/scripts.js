@@ -9,10 +9,12 @@ $(document).ready(function(){
 
     if (age > 18) {
       $('#adults').show();
+      $("body").addClass("merica");
     } else if(isNaN(age)){
        if (confirm("Please enter in a number")) checkAge();
     } else if (age === 18) {
       $('#adults').show();
+      $("body").addClass("merica");
       alert("Congratulations!");
     } else {
       $('#minors').show();
@@ -21,7 +23,9 @@ $(document).ready(function(){
   checkAge();
 
   $('#formOne').submit(function(event) {
+    alert("The police are on their way. Stay where you are.");
     $('#form').hide();
+    $('#adults img').show();
 
   event.preventDefault();
   });
